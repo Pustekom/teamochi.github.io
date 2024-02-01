@@ -1,47 +1,22 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import "iconify-icon";
 </script>
 
+<header>
+  <div class="flex bg-primary-400 text-white p-5">
+    <div class="flex items-center"><b class="text-2xl tracking-wider">Teamochi</b></div>
+    <div class="flex w-full justify-end items-center">
+      <span class="flex items-center transition-transform duration-200 ease-in-out hover:rotate-12"><a href="https://www.instagram.com/team.o.chi" target="_blank"><iconify-icon height=40 width=40 icon="fa6-brands:square-instagram" /></a></span>
+    </div>
+  </div>
+</header>
+
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <h1 class="p-5 w-full text-center">Coming soon...</h1>
 </main>
 
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+<style lang="scss">
+  :root {
+    @apply text-lg;
   }
 </style>
