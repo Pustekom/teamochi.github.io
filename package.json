@@ -37,6 +37,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"overlayscrollbars": "^2.5.0",
+		"overlayscrollbars-svelte": "^0.5.3",
 		"svelte-inview": "^4.0.2"
 	}
 }

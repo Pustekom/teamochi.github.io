@@ -1,7 +1,22 @@
 <script lang="ts">
     import "../app.postcss"
     import "iconify-icon"
+    import "overlayscrollbars/styles/overlayscrollbars.css"
+    import { OverlayScrollbars } from "overlayscrollbars"
+
+    OverlayScrollbars({
+        target: document.querySelector("body") as HTMLBodyElement,
+    }, {
+        overflow: {
+            x: 'hidden'
+        },
+        scrollbars: {
+            theme: "os-theme-light",
+            autoHide: "scroll",
+        }
+    })
 </script>
+
 
 <header>
     <div class="flex flex-col md:flex-row space-y-7 md:space-y-0 bg-primary-400 text-white p-5">
@@ -28,19 +43,21 @@
 </header>
 <slot />
 
-<style global lang="scss">
 
+<style global lang="scss">
     @font-face {
         font-family: 'OpenSans';
         src: url("/OpenSans-VariableFont_wdth,wght.ttf")
     }
 
     :root {
-        @apply tracking-wide;
+        @apply tracking-wide text-base md:text-lg;
         box-sizing: border-box;
-        @apply text-base md:text-lg;
         // @apply font-sans;
-        font-family: 'OpenSans';
+        font-family: 'OpenSans';  
     }
-    
+
+    :global(.os-theme-light) {
+        --os-handle-bg: theme(backgroundColor.white)
+    }
 </style>
