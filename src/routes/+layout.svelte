@@ -3,18 +3,21 @@
     import "iconify-icon"
     import "overlayscrollbars/styles/overlayscrollbars.css"
     import { OverlayScrollbars } from "overlayscrollbars"
+    import { browser } from "$app/environment"
 
-    OverlayScrollbars({
-        target: document.querySelector("body") as HTMLBodyElement,
-    }, {
-        overflow: {
-            x: 'hidden'
-        },
-        scrollbars: {
-            theme: "os-theme-light",
-            autoHide: "scroll",
-        }
-    })
+    if(browser) {
+        OverlayScrollbars({
+            target: document.querySelector("body") as HTMLBodyElement,
+        }, {
+            overflow: {
+                x: 'hidden'
+            },
+            scrollbars: {
+                theme: "os-theme-light",
+                autoHide: "scroll",
+            }
+        })
+    }
 </script>
 
 
