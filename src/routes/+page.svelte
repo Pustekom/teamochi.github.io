@@ -1,7 +1,9 @@
 <script lang="ts">
+	import Documentation from "$lib/components/Documentation.svelte";
     import Landing from "$lib/components/Landing.svelte";
 	import Members from "$lib/components/Members.svelte";
 	import Products from "$lib/components/Products.svelte";
+	import Reviews from "$lib/components/Reviews.svelte";
 </script>
 
 <main>
@@ -21,11 +23,17 @@
     <div class="w-full bg-primary-200 text-primary-900 min-h-screen h-full flex items-center" id="about-us">
         <Landing/>
     </div>
-    <div class="w-full bg-indigo-500 text-white min-h-screen h-full flex" id="our-members">
+    <div class="w-full bg-indigo-500 text-white min-h-screen h-full flex" id="our-products">
         <Products/>
     </div>
     <div class="w-full bg-primary-800 text-primary-200 min-h-screen h-full flex" id="our-members">
         <Members/>
+    </div>
+    <div class="w-full bg-yellow-950 text-primary-100 min-h-screen h-full flex">
+        <Documentation/>
+    </div>
+    <div class="w-full bg-orange-300 text-primary-900 min-h-screen h-full flex">
+        <Reviews/>
     </div>
 </main>
 

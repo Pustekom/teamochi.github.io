@@ -35,7 +35,7 @@
         <div class="flex items-center w-full flex-grow justify-center  md:justify-end md:mx-5 md:py-0 text-sm">
             <nav class="flex items-center justify-end space-x-3 scroll-smooth">
                 <a href="#about-us" class="text-primary-100 font-semibold border-r-2 border-primary-300 pr-3 transition-colors duration-200 hover:text-white" data-sveltekit-reload>About Us</a>
-                <a href="#our-product" class="text-primary-100 font-semibold border-r-2 border-primary-300 pr-3 transition-colors duration-200 hover:text-white" data-sveltekit-reload>Our Products</a>
+                <a href="#our-products" class="text-primary-100 font-semibold border-r-2 border-primary-300 pr-3 transition-colors duration-200 hover:text-white" data-sveltekit-reload>Our Products</a>
                 <a href="#our-members" class="text-primary-100 font-semibold transition-colors duration-200 hover:text-white" data-sveltekit-reload>Our Members</a>
             </nav>
         </div>
